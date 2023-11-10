@@ -1,0 +1,68 @@
+.outer{
+    margin: 0 auto;
+}
+.container{
+    width: 80vw;
+    height: auto;
+    margin-top: 50px;
+}
+.home-container{
+    height: 600px;
+    margin:50px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.resource-container{
+    height: 600px;
+    margin:50px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*Home page CSS*/
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title-main{
+    font-size: 72px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.title-sub{
+    font-size: 48px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.menu{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+.menu-list{
+    font-size: 24px;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin:10px auto 0 auto;
+}
+.menu-list:hover{
+    cursor: pointer;
+}
+
+/*Resource page*/
+.resource-list{
+    font-size: 24px;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+.resource-txt{
+    margin: 30px auto;
+}
+.resource-txt-title{
+    font-weight: bold;
+    font-size: 32px;
+}
