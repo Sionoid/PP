@@ -7,21 +7,79 @@
     margin-top: 50px;
 }
 .home-container{
-    height: 600px;
-    margin:50px auto 0 auto;
+    height: 800px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #edda15;
+}
+.steps-container{
+    height: 1200px;
+    width: 100%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #edda15;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.result-container{
+    height: 800px;
+    width: 100%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #edda15;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 .resource-container{
-    height: 600px;
-    margin:50px auto 0 auto;
+    height: 800px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #edda15;
 }
+.btn-primary{
+    background: #2a6d39;
+    color: #edda15;
+}
+.btn-secondary{
+    background: #73a82d;
+    color: #edda15;
+}
+.btn-primary:hover, .btn-primary:focus, 
+.btn-primary:active, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary:active.focus,
+.btn-primary.active, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary, 
+.open > .dropdown-toggle.btn-primary:hover,
+.open > .dropdown-toggle.btn-primary:focus, 
+.open > .dropdown-toggle.btn-primary.focus,
+.btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary.focus {
+    background: #edda15; 
+    color: #2a6d39; 
+}
+.btn-secondary:hover{
+    background: #edda15;
+    color: #73a82d
+}
+#home,#steps,#resource,#result{
+    background-color: #73a82d;
+}
+#play{
+    position: relative;
+}
+
 /*Home page CSS*/
 .title{
     display: flex;
@@ -50,8 +108,74 @@
 }
 .menu-list:hover{
     cursor: pointer;
+    color: #2a6d39; 
 }
-
+/*game play*/
+.bg01{
+    background-image: url(img/dummy4.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    opacity: 0.9;
+}
+.log-container{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.option{
+    width: 250px;
+    height: 50px;
+    font-size: 24px;
+    font-family: 'Nanum Gothic', sans-serif;
+    padding: 10px;
+    text-align: center;
+    float: right;
+    margin-right: 20px;
+}
+.log{
+    height: 200px;
+    font-size: 24px;
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: rgba(237, 218, 21, 0.8);
+    color: #2a6d39; 
+    padding: 0.2em 0.5em;
+    box-shadow: 0px 0px 0px 10px rgba(237, 218, 21, 0.8);
+    border-top: dashed 2px #2a6d39;
+    margin-top: 150px;
+}
+/*Result Page*/
+.result{
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+}
+/*How to play page*/
+#howto{
+    align-items: center;
+}
+.step-img{
+    height: 250px;
+    width: 350px;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+.steps{
+    display: flex;
+    flex-direction: row;
+}
+.step-txt{
+    height: 200px;
+    width: 300px;
+    margin-top: 25px;
+    font-size: 24px;
+}
+.bold{
+    font-weight: bold;
+}
 /*Resource page*/
 .resource-list{
     font-size: 24px;
