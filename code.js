@@ -130,7 +130,7 @@ $(".option1").click(function(){
     if (sceneNumlogNum = scene1log2) {
         $("#option").hide();
         sceneNumlogNum = scene1log21;
-        console.log(sceneNumlogNum)
+        actLog(sceneNumlogNum);
         score = score + 50;
         console.log(score);
     }else if (sceneNumlogNum = scene2log2) {
