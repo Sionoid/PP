@@ -117,12 +117,12 @@
 .play-area{
     margin: 0 auto;
     width: 80%;
-    height: 60vh;
+    height: 100vh;
     align-content: center;
 }
 .bg01{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-image: url(img/dummy4.png);
     background-size: cover;
     background-repeat: no-repeat;
