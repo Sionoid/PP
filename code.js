@@ -166,55 +166,79 @@ function setOptions(options) {
 }
 $(".option1").click(function(){
     $("#option").hide();
-    // 各オプションごとの処理を追加
+    if (!isLogAnimating) {
+        isLogAnimating = true;
     if (currentScene === scenes.scene1.log2) {
         currentScene = scenes.scene1.log21;
-        actLog(currentScene);
+        actLog(currentScene, function () {
+            isLogAnimating = false;
+        });
         score += 50;
     } else if (currentScene === scenes.scene2.log2) {
         currentScene = scenes.scene2.log21;
-        actLog(currentScene);
+        actLog(currentScene, function () {
+            isLogAnimating = false;
+        });
         score += 20;
     } else if (currentScene === scenes.scene3.log2) {
         currentScene = scenes.scene3.log21;
-        actLog(currentScene);
+        actLog(currentScene, function () {
+            isLogAnimating = false;
+        });
         score += 20;
     } else if (currentScene === scenes.scene4.log2) {
         currentScene = scenes.scene4.log21;
-        actLog(currentScene);
+        actLog(currentScene, function () {
+            isLogAnimating = false;
+        });
         score += 50;
     } else if (currentScene === scenes.scene5.log2) {
         currentScene = scenes.scene5.log21;
-        actLog(currentScene);
+        actLog(currentScene, function () {
+            isLogAnimating = false;
+        });
         score += 20;
     }
     console.log(score);
+}
 });
 $(".option2").click(function(){
     $("#option").hide();
-    // 各オプションごとの処理を追加
+    if (!isLogAnimating) {
+        isLogAnimating = true;
     if (currentScene === scenes.scene1.log2) {
         currentScene = scenes.scene1.log22;
-        actLog(currentScene);
+        actLog(currentScene, function () {
+            isLogAnimating = false;
+        });
         score += 20;
     } else if (currentScene === scenes.scene2.log2) {
         currentScene = scenes.scene2.log22;
-        actLog(currentScene);
+        actLog(currentScene, function () {
+            isLogAnimating = false;
+        });
         score += 50;
     } else if (currentScene === scenes.scene3.log2) {
         currentScene = scenes.scene3.log22;
-        actLog(currentScene);
+        actLog(currentScene, function () {
+            isLogAnimating = false;
+        });
         score += 50;
     } else if (currentScene === scenes.scene4.log2) {
         currentScene = scenes.scene4.log22;
-        actLog(currentScene);
+        actLog(currentScene, function () {
+            isLogAnimating = false;
+        });
         score += 20;
     } else if (currentScene === scenes.scene5.log2) {
         currentScene = scenes.scene5.log22;
-        actLog(currentScene);
+        actLog(currentScene, function () {
+            isLogAnimating = false;
+        });
         score += 50;
     }
     console.log(score);
+}
 });
 //log animation
 
