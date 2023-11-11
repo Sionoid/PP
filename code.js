@@ -74,7 +74,10 @@ $(".list-start").click(function(){
     $("#play").show();
     $("#option").hide();
     currentScene = scenes.scene1.log1;
-    actLog(currentScene);
+    isLogAnimating = true;
+    actLog(currentScene, function () {
+        isLogAnimating = false;
+    });;
 });
 $(".list-howto").click(function(){
     $("#home").hide();
