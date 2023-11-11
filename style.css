@@ -40,7 +40,7 @@
     font-family: 'Nanum Gothic', sans-serif;
 }
 .resource-container{
-    height: 800px;
+    height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -88,6 +88,7 @@
     align-items: center;
 }
 .title-main{
+    padding-top: 20px;
     font-size: 72px;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -164,6 +165,7 @@
     box-shadow: 0px -10px 0px 0px rgba(237, 218, 21, 0.8);
     border-top: dashed 2px #2a6d39;
     margin-top: 150px;
+    overflow: auto;
 }
 #log::after {
     content: "|";

@@ -88,48 +88,72 @@ $(".btn-back").click(function(){
     reset();
 });
 //option select
+let isLogAnimating = false;
 
 $(".log").click(function(){
+    if (!isLogAnimating) {
+        isLogAnimating = true;
     if (currentScene === scenes.scene1.log1) {
         currentScene = scenes.scene1.log2;
-        actLog(currentScene);
-        setOptions(scenes.scene1.options);
+        actLog(currentScene, function () {
+            isLogAnimating = false;
+            setOptions(scenes.scene1.options);
+        });
     } else if (currentScene === scenes.scene1.log21 || currentScene === scenes.scene1.log22) {
         currentScene = scenes.scene2.log1;
-        actLog(currentScene);
+        actLog(currentScene, function () {
+            isLogAnimating = false;
+        });;
     } else if (currentScene === scenes.scene2.log1) {
         currentScene = scenes.scene2.log2;
-        actLog(currentScene);
-        setOptions(scenes.scene2.options);
+        actLog(currentScene, function () {
+            isLogAnimating = false;
+            setOptions(scenes.scene2.options);
+        });
     } else if (currentScene === scenes.scene2.log21 || currentScene === scenes.scene2.log22) {
         currentScene = scenes.scene3.log1;
-        actLog(currentScene);
+        actLog(currentScene, function () {
+            isLogAnimating = false;
+        });
     } else if (currentScene === scenes.scene3.log1) {
         currentScene = scenes.scene3.log2;
-        actLog(currentScene);
-        setOptions(scenes.scene3.options);
+        actLog(currentScene, function () {
+            isLogAnimating = false;
+            setOptions(scenes.scene3.options);
+        });
     } else if (currentScene === scenes.scene3.log21 || currentScene === scenes.scene3.log22) {
         currentScene = scenes.scene4.log1;
-        actLog(currentScene);
+        actLog(currentScene, function () {
+            isLogAnimating = false;
+        });
     } else if (currentScene === scenes.scene4.log1) {
         currentScene = scenes.scene4.log2;
-        actLog(currentScene);
-        setOptions(scenes.scene4.options);
+        actLog(currentScene, function () {
+            isLogAnimating = false;
+            setOptions(scenes.scene4.options);
+        });
     } else if (currentScene === scenes.scene4.log21 || currentScene === scenes.scene4.log22) {
         currentScene = scenes.scene5.log1;
-        actLog(currentScene);
+        actLog(currentScene, function () {
+            isLogAnimating = false;
+        });
     } else if (currentScene === scenes.scene5.log1) {
         currentScene = scenes.scene5.log2;
-        actLog(currentScene);
-        setOptions(scenes.scene5.options);
+        actLog(currentScene, function () {
+            isLogAnimating = false;
+            setOptions(scenes.scene5.options);
+        });
     } else if (currentScene === scenes.scene5.log21 || currentScene === scenes.scene5.log22) {
         currentScene = scenes.sceneEnd;
-        actLog(currentScene);
+        actLog(currentScene, function () {
+            isLogAnimating = false;
+        });
     } else if (currentScene === scenes.sceneEnd) {
         $("#play").hide();
         $("#result").show();
         document.getElementById("js-score").innerText = score;
     }
+}
 });
 //option show
 function setOptions(options) {
@@ -191,22 +215,25 @@ $(".option2").click(function(){
 });
 //log animation
 
-function actLog(currentScene){
+function actLog(currentScene, callback) {
     document.getElementById("log").innerText = "";
     const log = (param) => {
-
         let el = document.querySelector(param.el);
         let speed = param.speed;
         let string = param.string.split("");
         string.forEach((char, index) => {
             setTimeout(() => {
                 el.textContent += char;
+                if (index === string.length - 1 && callback) {
+                    // 最後の文字が表示されたらコールバックを実行
+                    callback();
+                }
             }, speed * index);
         });
     };
     log({
-        el: "#log", //要素
-        string: currentScene, //文字列
-        speed: 50 //速度
-    });    
+        el: "#log",
+        string: currentScene,
+        speed: 50,
+    });
 }
