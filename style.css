@@ -74,6 +74,9 @@
     background: #edda15;
     color: #73a82d
 }
+.btn-back{
+    margin-top: 40px;
+}
 #home,#steps,#resource,#result{
     background-color: #73a82d;
 }
