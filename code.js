@@ -73,6 +73,7 @@ $(".list-start").click(function(){
     $("#home").hide();
     $("#play").show();
     $("#option").hide();
+    score = 0;
     currentScene = scenes.scene1.log1;
     isLogAnimating = true;
     actLog(currentScene, function () {
