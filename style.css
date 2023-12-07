@@ -132,12 +132,33 @@
     width: 100%;
     height: 0;
     padding-bottom: 56.25%;
-    background-image: url(img/dummy5.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.9;
 }
+.bgsc1{
+    background-image: url(img/scene1.png);
+}
+.bgsc21{
+    background-image: url(img/scene2-1.png);
+}
+.bgsc22{
+    background-image: url(img/scene2-2.png);
+}
+.bgsc31{
+    background-image: url(img/scene3-1.png);
+}
+.bgsc32{
+    background-image: url(img/scene3-2.png);
+}
+.bgsc51{
+    background-image: url(img/scene5-1.png);
+}
+.bgsc51{
+    background-image: url(img/scene5-2.png);
+}
+
 .log-container{
     width: 100%;
     position: absolute;

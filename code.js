@@ -67,6 +67,13 @@ function reset(){
     $("#result").hide();
     $("#steps").hide();
     $("#resource").hide();
+    $("#scenes").addClass('bgsc1');
+    $("#scenes").removeClass('bgsc21');
+    $("#scenes").removeClass('bgsc22');
+    $("#scenes").removeClass('bgsc31');
+    $("#scenes").removeClass('bgsc32');
+    $("#scenes").removeClass('bgsc51');
+    $("#scenes").removeClass('bgsc52');
 }
 //Page movements
 $(".list-start").click(function(){
@@ -108,6 +115,8 @@ $(".log").click(function(){
         actLog(currentScene, function () {
             isLogAnimating = false;
         });;
+        $("#scenes").addClass('bgsc21');
+        $("#scenes").removeClass('bgsc1');
     } else if (currentScene === scenes.scene2.log1) {
         currentScene = scenes.scene2.log2;
         actLog(currentScene, function () {
@@ -119,6 +128,9 @@ $(".log").click(function(){
         actLog(currentScene, function () {
             isLogAnimating = false;
         });
+        $("#scenes").addClass('bgsc31');
+        $("#scenes").removeClass('bgsc21');
+        $("#scenes").removeClass('bgsc22');
     } else if (currentScene === scenes.scene3.log1) {
         currentScene = scenes.scene3.log2;
         actLog(currentScene, function () {
@@ -130,6 +142,9 @@ $(".log").click(function(){
         actLog(currentScene, function () {
             isLogAnimating = false;
         });
+        $("#scenes").addClass('bgsc21');
+        $("#scenes").removeClass('bgsc31');
+        $("#scenes").removeClass('bgsc32');
     } else if (currentScene === scenes.scene4.log1) {
         currentScene = scenes.scene4.log2;
         actLog(currentScene, function () {
@@ -141,6 +156,9 @@ $(".log").click(function(){
         actLog(currentScene, function () {
             isLogAnimating = false;
         });
+        $("#scenes").addClass('bgsc51');
+        $("#scenes").removeClass('bgsc21');
+        $("#scenes").removeClass('bgsc22');
     } else if (currentScene === scenes.scene5.log1) {
         currentScene = scenes.scene5.log2;
         actLog(currentScene, function () {
@@ -181,12 +199,16 @@ $(".option1").click(function(){
             isLogAnimating = false;
         });
         score += 20;
+        $("#scenes").addClass('bgsc22');
+        $("#scenes").removeClass('bgsc21');
     } else if (currentScene === scenes.scene3.log2) {
         currentScene = scenes.scene3.log21;
         actLog(currentScene, function () {
             isLogAnimating = false;
         });
         score += 20;
+        $("#scenes").addClass('bgsc32');
+        $("#scenes").removeClass('bgsc21');
     } else if (currentScene === scenes.scene4.log2) {
         currentScene = scenes.scene4.log21;
         actLog(currentScene, function () {
@@ -199,6 +221,8 @@ $(".option1").click(function(){
             isLogAnimating = false;
         });
         score += 20;
+        $("#scenes").addClass('bgsc52');
+        $("#scenes").removeClass('bgsc51');
     }
     console.log(score);
 }
@@ -231,6 +255,8 @@ $(".option2").click(function(){
             isLogAnimating = false;
         });
         score += 20;
+        $("#scenes").addClass('bgsc22');
+        $("#scenes").removeClass('bgsc21');
     } else if (currentScene === scenes.scene5.log2) {
         currentScene = scenes.scene5.log22;
         actLog(currentScene, function () {
