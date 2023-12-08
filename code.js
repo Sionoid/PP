@@ -29,7 +29,7 @@ var scenes = {
         log1: "(It's lunch time. You are in the food court, trying to order your meal.)",
         log2: "Hi, what do you want?",
         log21: "Sure! here is you meal, enjoy!",
-        log22: "ok, here is your meal (...does this kid don;t have manners?)",
+        log22: "ok, here is your meal (...does this kid don't have manners?)",
         options: {
             option1: "Can I have the daily set with milo?",
             option2: "daily set, milo"
