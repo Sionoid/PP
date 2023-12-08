@@ -6,53 +6,53 @@ var score = 0;
 
 var scenes = {
     scene1: {
-        log1: "Sample scene1 Sample scene1 Sample scene1 Sample scene1 Sample scene1 Sample scene1 Sample scene1 Sample scene1 Sample scene1 Sample scene1 Sample scene1 ",
-        log2: "sample question1 sample question sample question sample question sample question sample question sample question",
-        log21: "sample q1a1 sample a1 sample a1 sample a1 sample a1 sample a1 sample a1 ",
-        log22: "sample q1a2 sample a2 sample a2 sample a2 sample a2 sample a2 sample a2 ",
+        log1: "(one morning, you are rushing downstairs, You are almost about to be late for the bus. You reach down and sees your drive waiting for you)",
+        log2: "You are quite late today, what happened",
+        log21: "Oh well, you got to be more careful next time!",
+        log22: "Well, whatever it is. Don't be late next time.",
         options: {
-            option1: "Option11",
-            option2: "Option12"
+            option1: "Sorry miss, I overslept and was rushing.",
+            option2: "(You don't say anything)"
         }
     },
     scene2: {
-        log1: "Sample scene2 Sample scene2 Sample scene2 Sample scene2 Sample scene2 Sample scene2 Sample scene2 Sample scene2 Sample scene2 Sample scene2 Sample scene2 ",
-        log2: "sample question2 sample question sample question sample question sample question sample question sample question",
-        log21: "sample q2a1 sample a1 sample a1 sample a1 sample a1 sample a1 sample a1 ",
-        log22: "sample q2a2 sample a2 sample a2 sample a2 sample a2 sample a2 sample a2 ",
+        log1: "(Due to heavy traffic, you are 5 minutes late to class. When you enter the class, your teacher asks you why)",
+        log2: "Good morning. May I ask you why are you late for my class?",
+        log21: "What kind of manner is that to your teacher!? I will need you to see me after school.",
+        log22: "Oh, if so it is fine. Thanks for letting me know.",
         options: {
-            option1: "Option21",
-            option2: "Option22"
+            option1: "Nothing much, don't need to know",
+            option2: "Sorry teacher, my bus was stuck in the traffic jam"
         }
     },
     scene3: {
-        log1: "Sample scene3 Sample scene3 Sample scene3 Sample scene3Sample scene3 Sample scene3 Sample scene3 Sample scene3 Sample scene3 Sample scene3 Sample scene3 ",
-        log2: "sample question3 sample question sample question sample question sample question sample question sample question",
-        log21: "sample q3a1 sample a1 sample a1 sample a1 sample a1 sample a1 sample a1 ",
-        log22: "sample q3a2 sample a2 sample a2 sample a2 sample a2 sample a2 sample a2 ",
+        log1: "(It's lunch time. You are in the food court, trying to order your meal.)",
+        log2: "Hi, what do you want?",
+        log21: "Sure! here is you meal, enjoy!",
+        log22: "ok, here is your meal (...does this kid don;t have manners?)",
         options: {
-            option1: "Option31",
-            option2: "Option32"
+            option1: "Can I have the daily set with milo?",
+            option2: "daily set, milo"
         }
     },
     scene4: {
-        log1: "Sample scene4 Sample scene4 Sample scene4 Sample scene4 Sample scene4 Sample scene4 Sample scene4 Sample scene4 Sample scene4Sample scene4 Sample scene4 ",
-        log2: "sample question4 sample question sample question sample question sample question sample question sample question",
-        log21: "sample q4a1 sample a1 sample a1 sample a1 sample a1 sample a1 sample a1 ",
-        log22: "sample q4a2 sample a2 sample a2 sample a2 sample a2 sample a2 sample a2 ",
+        log1: "(During lesson, you suddenly feel the urge to go to the toilet.",
+        log2: "(In a polite way, tell the teacher you want to go to toilet)",
+        log21: "Sure (This student... there is a need for him to know manners)",
+        log22: "Sure, take the pass and go",
         options: {
-            option1: "Option41",
-            option2: "Option42"
+            option1: "Teacher, can I go toilet?",
+            option2: "Teacher, may I go to the washroom?"
         }
     },
     scene5: {
-        log1: "Sample scene5 Sample scene5 Sample scene5 Sample scene5 Sample scene5 Sample scene5 Sample scene5 Sample scene5 Sample scene5 Sample scene5 Sample scene5 ",
-        log2: "sample question5 sample question sample question sample question sample question sample question sample question",
-        log21: "sample q5a1 sample a1 sample a1 sample a1 sample a1 sample a1 sample a1 ",
-        log22: "sample q5a2 sample a2 sample a2 sample a2 sample a2 sample a2 sample a2 ",
+        log1: "(After school, your friend asks you to play basketball with him. However you need to go back to home now.)",
+        log2: "Hey, we are going to have a match now, you want to join?",
+        log21: "OK sure, if so lets play next week! Have a nice weekend!",
+        log22: "Oh... Ok sure, if so lets play next weekend. (Why is he so dry to me? did I do anything to him?)",
         options: {
-            option1: "Option51",
-            option2: "Option52"
+            option1: "I would like to, but sorry I need to go back home",
+            option2: "Nah"
         }
     },
     sceneEnd: "Your day has ended"
