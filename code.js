@@ -21,7 +21,7 @@ var scenes = {
         log21: "What kind of manner is that to your teacher!? I will need you to see me after school.",
         log22: "Oh, if so it is fine. Thanks for letting me know.",
         options: {
-            option1: "Nothing much, don't need to know",
+            option1: "Sorry teacher! never mind!",
             option2: "Sorry teacher, my bus was stuck in the traffic jam"
         }
     },
