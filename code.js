@@ -38,21 +38,21 @@ var scenes = {
     scene4: {
         log1: "(During lesson, you suddenly feel the urge to go to the toilet.",
         log2: "(In a polite way, tell the teacher you want to go to toilet)",
-        log21: "Sure (This student... there is a need for him to know manners)",
-        log22: "Sure, take the pass and go",
+        log21: "Sure, take the pass and go",
+        log22: "...Sure (This student... there is a need for him to know manners)",
         options: {
-            option1: "Teacher, can I go toilet?",
-            option2: "Teacher, may I go to the washroom?"
+            option1: "Teacher, may I go to the washroom?",
+            option2: "Teacher, can I go toilet?"
         }
     },
     scene5: {
         log1: "(After school, your friend asks you to play basketball with him. However you need to go back to home now.)",
         log2: "Hey, we are going to have a match now, you want to join?",
-        log21: "OK sure, if so lets play next week! Have a nice weekend!",
-        log22: "Oh... Ok sure, if so lets play next weekend. (Why is he so dry to me? did I do anything to him?)",
+        log21: "Oh... Ok sure, if so lets play next weekend. (Why is he so dry to me? did I do anything to him?)",
+        log22: "OK sure, if so lets play next week! Have a nice weekend!",
         options: {
-            option1: "I would like to, but sorry I need to go back home",
-            option2: "Nah"
+            option1: "Nah",
+            option2: "I would like to, but sorry I need to go back home"
         }
     },
     sceneEnd: "Your day has ended"
@@ -208,7 +208,7 @@ $(".option1").click(function(){
         });
         score += 20;
         $("#scenes").addClass('bgsc32');
-        $("#scenes").removeClass('bgsc21');
+        $("#scenes").removeClass('bgsc31');
     } else if (currentScene === scenes.scene4.log2) {
         currentScene = scenes.scene4.log21;
         actLog(currentScene, function () {
